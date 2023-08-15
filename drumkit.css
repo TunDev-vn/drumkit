@@ -3,6 +3,7 @@
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    user-select: none;
 }
 body {
     display: flex;
@@ -41,7 +42,6 @@ body {
     height: 50vw;
     background-size: contain;
     background-repeat: no-repeat;
-    user-select: none;
 }
 .container > div {
     position: absolute;
@@ -52,7 +52,6 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    user-select: none;
 }
 .container span {
     padding: 2px;

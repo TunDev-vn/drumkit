@@ -1,50 +1,61 @@
 const drumTotal = document.querySelectorAll(".container > div");
 
+var hiHatOpen = new Audio();
+var hiHatClosed = new Audio();
+var hiHatFoot = new Audio();
+var crashCymbal = new Audio();
+var snareDrum = new Audio();
+var snareDrumCs = new Audio();
+var highTom = new Audio();
+var lowTom = new Audio();
+var bassDrum = new Audio();
+var floorTom = new Audio();
+var rideCymbal = new Audio();
+
 drumTotal[0].addEventListener("click", () => {
-    var hiHatOpen = new Audio("./sounds/hi-hat-open.mp3");
+    hiHatOpen.src = "./sounds/hi-hat-open.mp3";
     hiHatOpen.play();
 });
 drumTotal[1].addEventListener("click", () => {
-    var hiHatClosed = new Audio("./sounds/hi-hat-closed.mp3");
+    hiHatClosed.src = "./sounds/hi-hat-closed.mp3";
     hiHatClosed.play();
 });
 drumTotal[2].addEventListener("click", () => {
-    var hiHatFoot = new Audio("./sounds/hi-hat-foot.mp3");
+    hiHatFoot.src = "./sounds/hi-hat-foot.mp3";
     hiHatFoot.play();
 });
 drumTotal[3].addEventListener("click", () => {
-    var crashCymbal = new Audio("./sounds/crash-cymbal.mp3");
+    crashCymbal.src = "./sounds/crash-cymbal.mp3";
     crashCymbal.play();
 });
 drumTotal[4].addEventListener("click", () => {
-    var snareDrum = new Audio("./sounds/snare-drum.mp3");
+    snareDrum.src = "./sounds/snare-drum.mp3";
     snareDrum.play();
 });
 drumTotal[5].addEventListener("click", () => {
-    var snareDrumCs = new Audio("./sounds/snare-drum-cs.mp3");
+    snareDrumCs.src = "./sounds/snare-drum-cs.mp3";
     snareDrumCs.play();
 });
 drumTotal[6].addEventListener("click", () => {
-    var highTom = new Audio("./sounds/high-tom.mp3");
+    highTom.src = "./sounds/high-tom.mp3";
     highTom.play();
 });
 drumTotal[7].addEventListener("click", () => {
-    var lowTom = new Audio("./sounds/low-tom.mp3");
+    lowTom.src = "./sounds/low-tom.mp3";
     lowTom.play();
 });
 drumTotal[8].addEventListener("click", () => {
-    var bassDrum = new Audio("./sounds/bass-drum.mp3");
+    bassDrum.src = "./sounds/bass-drum.mp3";
     bassDrum.play();
 });
 drumTotal[9].addEventListener("click", () => {
-    var floorTom = new Audio("./sounds/floor-tom.mp3");
+    floorTom.src = "./sounds/floor-tom.mp3";
     floorTom.play();
 });
 drumTotal[10].addEventListener("click", () => {
-    var rideCymbal = new Audio("./sounds/ride-cymbal.mp3");
+    rideCymbal.src = "./sounds/ride-cymbal.mp3";
     rideCymbal.play();
 });
-
 
 document.addEventListener("keypress", (event) => {
     switch (event.key) {
