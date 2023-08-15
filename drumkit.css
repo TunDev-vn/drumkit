@@ -41,6 +41,7 @@ body {
     height: 50vw;
     background-size: contain;
     background-repeat: no-repeat;
+    user-select: none;
 }
 .container > div {
     position: absolute;
@@ -51,6 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    user-select: none;
 }
 .container span {
     padding: 2px;
