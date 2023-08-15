@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="./images/drum-kit-favicon.png">
+    <title>Drum kit</title>
+    <link rel="stylesheet" href="./drumkit.css">
+</head>
+<body>
+        <img class="logo" src="./images/Drumkit-logo.png" alt="drumkit-logo">
+        <div>
+            <button class="show-shortcuts">Show shortcuts</button>
+            <button class="show-ranges">Show ranges</button>
+        </div>
+        <div class="container">
+            <div class="hi-hat-open" data-keypress="e">
+                <span draggable="true">E</span>
+            </div>
+            <div class="hi-hat-closed" data-keypress="r">
+                <span draggable="true">R</span>
+            </div>
+            <div class="hi-hat-foot" data-keypress="c">
+                <span draggable="true">C</span>
+            </div>
+            <div class="crash-cymbal" data-keypress="y">
+                <span draggable="true">Y</span>
+            </div>
+            <div class="snare-drum" data-keypress="s">
+                <span draggable="true">S</span>
+            </div>
+            <div class="snare-drum-cs" data-keypress="d">
+                <span draggable="true">D</span>
+            </div>
+            <div class="high-tom-tom" data-keypress="g">
+                <span draggable="true">G</span>
+            </div>
+            <div class="low-tom-tom" data-keypress="h">
+                <span draggable="true">H</span>
+            </div>
+            <div class="bass-drum" data-keypress="x">
+                <span draggable="true">X</span>
+            </div>
+            <div class="floor-tom" data-keypress="j">
+                <span draggable="true">J</span>
+            </div>
+            <div class="ride-cymbal" data-keypress="u">
+                <span draggable="true">U</span>
+            </div>
+        </div>
+        <div class="tutorials">
+            <h3>Play drums from keyboard</h3>
+            <ul>
+                <li>Crash cymbal: <span>y</span></li>
+                <li>Ride cymbal: <span>u</span></li>
+                <li>Hi-hat (closed): <span>r</span> or <span>t</span></li>
+                <li>Hi-hat (open): <span>e</span> or <span>w</span></li>
+                <li>Hi-hat (foot): <span>c</span></li>
+                <li>High tom-tom: <span>g</span></li>
+                <li>Low tom-tom: <span>h</span></li>
+                <li>Floor tom: <span>j</span></li>
+                <li>Snare drum: <span>s</span> or <span>a</span></li>
+                <li>Snare drum (cross stick): <span>d</span> or <span>f</span></li>
+                <li>Bass drum: <span>x</span> or <span>z</span></li>
+            </ul>
+        </div>
+        <footer>
+            <p>
+                @made by <a href="https://tundev.id.vn/" title="TunDev" target="_blank">TunDev</a>
+            </p>
+        </footer>
+    <script src="./drumkit.js"></script>
+</body>
+</html>

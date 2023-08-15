@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white !important;
+}
+.logo {
+    margin-top: 1%;
+    width: 500px;
+    margin-bottom: 50px;
+}
+.show-shortcuts, .show-ranges {
+    width: 130px;
+    background-color: rgb(222, 222, 222);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.2s;
+}
+.show-shortcuts:hover, .show-ranges:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.show-shortcuts:active, .show-ranges:active {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.8);
+    opacity: 0.7;
+}
+
+.container {
+    margin-top: 7%;
+    position: relative;
+    background-image: url("./images/drumkit-bg.png");
+    width: 64.2857vw;
+    height: 50vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container > div {
+    position: absolute;
+    border: 2px dashed rgb(165, 22, 22);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container span {
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background-color: lightseagreen;
+    font-size: 13px;
+}
+.hi-hat-open {
+    top: 20%;
+    left: 4%;
+    width: 18%;
+    height: 7%;
+}
+.hi-hat-closed {
+    top: 28%;
+    left: 4%;
+    width: 18%;
+    height: 6%;
+    border-bottom-right-radius: 80% !important;
+}
+.hi-hat-foot {
+    width: 12%;
+    height: 40%;
+    top: 46%;
+    left: 7%;
+}
+.hi-hat-foot > span {
+    margin-bottom: -170%;
+    margin-right: -70%;
+}
+.crash-cymbal {
+    width: 21%;
+    height: 9%;
+    left: 12%;
+}
+.snare-drum {
+    top: 30%;
+    left: 19%;
+    width: 20%;
+    height: 9%;
+    border-radius: 60% !important;
+}
+.snare-drum-cs {
+    top: 39%;
+    left: 18%;
+    width: 21%;
+    height: 8%;
+    border-bottom-left-radius: 30% !important;
+    border-bottom-right-radius: 60% !important;
+}
+.high-tom-tom {
+    top: 14%;
+    left: 30%;
+    width: 17%;
+    height: 15%;
+}
+.low-tom-tom {
+    top: 14%;
+    left: 48%;
+    width: 17%;
+    height: 15%;
+}
+.bass-drum {
+    top: 40%;
+    left: 33%;
+    width: 28%;
+    height: 35%;
+    border-radius: 70% !important;
+}
+.bass-drum > span {
+    margin-bottom: -87%;
+    margin-left: -4%;
+}
+.floor-tom {
+    top: 33%;
+    left: 58%;
+    width: 23%;
+    height: 15%;
+    border-bottom-left-radius: 15% !important;
+}
+.ride-cymbal {
+    top: 11%;
+    left: 66%;
+    width: 26%;
+    height: 11%;
+}
+.tutorials > h3 {
+    margin-bottom: 10px;
+}
+.tutorials span {
+    padding: 1px 5px;
+    background-color: #dedede;
+    border-radius: 5px;
+    font-size: 13px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 50px;
+    background-color: #ededed;
+}
+footer p {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+footer a {
+    text-decoration: none;
+}
+
+.hide-shortcuts {
+    visibility: hidden;
+}
+.hide-border {
+    border: none !important;
+}
+
+@media screen and (max-width: 992px) {
+    .logo {
+        margin-top: 1%;
+        width: 300px;
+    }
+    .container span {
+        padding: 3px;
+        width: 11px;
+        height: 11px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        background-color: lightseagreen;
+        font-size: 8px;
+    }
+    .container {
+        width: 90vw;
+        height: 70vw;
+    }
+}
